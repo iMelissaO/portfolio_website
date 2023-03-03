@@ -15,6 +15,46 @@ White color: #FAFAFA
 Black color: #585959
 */
 
+
+
 body {
- font-family: 'Quicksand', sans-serif;
+ background-color: #F7F7F7;
+ font-family: 'Source Sans Pro', sans-serif;
+ font-size: 16px;
+ /* Sets the font size to 16px */
+ font-weight: 300;
+ /* Sets the font weight to 300 */
+ line-height: 1.6;
+ /* Sets the line-height to 1.6 * the font-size */
+ color: #262626;
 }
+
+h1,
+h2,
+h3,
+ {
+ line-height: 1.4;
+}
+
+.Melissa {
+ color: #FF386B;
+}
+h1 {
+
+ font-family: 'Quicksand', sans-serif;
+ font-size: 2.75em;
+ font-weight: 700;
+
+}
+
+h2 {
+ font-family: 'Quicksand', sans-serif;
+ font-size: 2.25em;
+ font-weight: 700;
+}
+
+h3 {
+ font-size: 1.75em;
+ font-weight: 400;
+}
+
