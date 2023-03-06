@@ -29,12 +29,7 @@ body {
  color: #262626;
 }
 
-h1,
-h2,
-h3,
- {
- line-height: 1.4;
-}
+h1,h2,h3, {line-height: 1.4;}
 
 .Melissa {
  color: #FF386B;
@@ -58,9 +53,18 @@ h3 {
  font-weight: 400;
 }
 
+/* custom logo sizing */
+#logoimelissa {
+ width: 80px;
+ height: auto;
+}
+
+/* general image responsive sizing */
 img {
  width: 100%;
 }
+
+
 
 a {
  color: #262626;
@@ -68,29 +72,34 @@ a {
  /* No underlining */
 }
 
-a:hover , :focus{
+a:hover {
+ color: #cc6540;
+ text-decoration: underline;
+ /* Underlining when hovering over a link */
+}
+
+a:hover ,
+ :focus{
  color: #FF386B;
  text-decoration: underline;
  /* Underlining when hovering over a link */
 }
 
-a:visited {
+a:visited{
  /* visited link */
  color:#262626;
 }
 
-a:active {
+a:active{
  /* selected link */
- color:#FF386B;
+ color:#31A8FF;
 }
 
 
-
-.button{
- display: inline-block;
+.button{display: inline-block;
  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
  background-color: #ff7f50;
- color: #ffffff;
+ color:#F7F7F7;
  /* needed to override the default link color */
  font-weight: 400;
  padding: 10px;
@@ -100,28 +109,31 @@ a:active {
  transition: 0.2s opacity;
 } 
 
+.button:hover {
+ opacity: 0.8;
+} 
+
+
 
 .button.contact {
  background-color: transparent;
- color: #ff7f50;
+ color: #FF386B;
  text-transform: uppercase;
- border: 2px solid #ff7f50;
+ border: 2px solid #FF386B;
 }
 .button.contact:hover {
- background-color: #ff7f50;
+ background-color: #FF386B;
  color: #ffffff;
 }
 
-.button.resume {
+.button.resume{
  background-color: transparent;
- color: #ff7f50;
+ color:#FF386B;
  text-transform: uppercase;
- border: 2px solid #ff7f50;
+ border: 2px solid #FF386B;
 }
 
-.button.contact:hover {
- background-color: #ff7f50;
+.button.resume:hover {
+ background-color: #FF386B;
  color: #ffffff;
 }
-
-
