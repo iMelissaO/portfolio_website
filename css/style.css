@@ -16,7 +16,6 @@ Black color: #585959
 */
 
 
-
 body {
  background-color: #F7F7F7;
  font-family: 'Source Sans Pro', sans-serif;
@@ -136,4 +135,20 @@ a:active{
 .button.resume:hover {
  background-color: #FF386B;
  color: #ffffff;
+}
+
+
+/* Layout styling */
+
+.container {
+ padding: 0 15px;
+}
+.row {
+ margin: 25px 0;
+ /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+ padding-bottom: 25px;
+ border-bottom: 1px solid #4a4a4a;
 }
