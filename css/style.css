@@ -15,6 +15,49 @@ White color: #FAFAFA
 Black color: #585959
 */
 
+header {
+ background-color: #F7F7F7;
+ text-align: center;
+ padding: 10px 0;
+ position: relative
+ 
+}
+
+nav>ul {
+ box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+ list-style-type: none;
+ padding: 0;
+ font-family:'quicksand'
+} 
+nav>ul>li {
+ display: inline-block;
+}
+
+nav>ul>li>a {
+ padding: 0 15px;
+ text-transform: uppercase;
+ font-weight: 700;
+ color: #4a4a4a;
+ width: 100%;
+ 
+}
+
+nav>ul>li>a:visited {color:#FF386B;}
+nav>ul>li>a:hover {
+ color:#4a4a4a ;
+}
+nav>ul>li>a:active {
+ color:#262626;
+}
+
+main {
+ padding-top: 133px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 
 body {
  background-color: #F7F7F7;
@@ -54,7 +97,7 @@ h3 {
 
 /* custom logo sizing */
 #logoimelissa {
- width: 80px;
+ width: 250px;
  height: auto;
 }
 
@@ -97,15 +140,16 @@ a:active{
 
 .button{display: inline-block;
  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
- background-color: #ff7f50;
+ background-color:#262626;
  color:#F7F7F7;
  /* needed to override the default link color */
  font-weight: 400;
  padding: 10px;
  border-radius: 3px;
- border-bottom: 2px solid #994c30;
+ border-bottom: 2px solid #262626;
  /* width of the border, type, color */
  transition: 0.2s opacity;
+
 } 
 
 .button:hover {
@@ -140,6 +184,18 @@ a:active{
 
 /* Layout styling */
 
+#hero h1,p {
+ text-align: center;
+ /* Centers text */
+}
+
+#hero {
+ background-color: #F7F7F7;
+ padding: 20px 0;
+ display: inline-block;
+ width: 100%;
+}
+
 .container {
  padding: 0 15px;
 }
@@ -151,4 +207,17 @@ a:active{
 #work .row {
  padding-bottom: 25px;
  border-bottom: 1px solid #4a4a4a;
+
 }
+#work h3,p {text-align: left;}
+
+#work p {text-align: left;}
+
+#footer p {text-align: center;}
+
+#about h2,p {
+ text-align: center;
+ /* Centers text */
+}
+
+#app h1,h2,h3,p {text-align:center ;}
