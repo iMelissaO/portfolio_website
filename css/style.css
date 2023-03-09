@@ -163,6 +163,7 @@ a:active{
  color: #FF386B;
  text-transform: uppercase;
  border: 2px solid #FF386B;
+
 }
 .button.contact:hover {
  background-color: #FF386B;
@@ -174,7 +175,10 @@ a:active{
  color:#FF386B;
  text-transform: uppercase;
  border: 2px solid #FF386B;
+
 }
+
+
 
 .button.resume:hover {
  background-color: #FF386B;
@@ -213,7 +217,10 @@ a:active{
 
 #work p {text-align: left;}
 
-#footer p {text-align: center;}
+#footer {text-align: center;}
+#footer p {
+ text-align: center;
+}
 
 #about h2,p {
  text-align: center;
