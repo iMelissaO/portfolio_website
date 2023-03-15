@@ -1,30 +1,33 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr"></html>
 <html>
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
 
   <style> @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
   </style>
 
 <script src="https://kit.fontawesome.com/477cbefee9.js" crossorigin="anonymous" ></script>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="author" content="YourName" />
-<meta name="description" content="Short description including keywords related to the pages content for SEO purposes"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<meta name="author" content="YourName" >
+<meta name="description" content="Short description including keywords related to the pages content for SEO purposes">
+
+
 
 <title>Melissa O'Conor Portfolio</title>
-
+</head>
 
 <body>
 <!-- For the header -->
  <header>
 <!-- For the navigation -->
 
-<img id="logoimelissa" src="img/portfolio_images/imelissa._logo.svg" alt="logo_for_iMelissa portfolio">
+<img class="logoimelissa" src="img/portfolio_images/imelissa._logo.svg" alt="logo_for_iMelissa portfolio">
 
 <nav>
 <ul class="navigation">
@@ -33,63 +36,69 @@
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
-</div>
+
 
 </header>
 
 <div id="hero">
 <div class="container">
-<h1>Hi, I’m <span class="Melissa">Melissa.</span></h1>
+<span><h1>Hi, I’m <span class="Melissa">Melissa.</span></h1></span>
 
 <p>I’m a UI/UX designer based in Toronto. 
   Turning your UI/UX dreams into
 reality with a unique blend of creativity and technical knowledge</p>
-</div>
+</div><!--end container-->
+
 
 <div id="work">
 <div class="container">
-  
  <h2>My work</h2>
- <div class="row">
 
-<div>
+
+ <div class="row">
+<div class="col- md-6 col-lg-7">
 <picture><source srcset="img/portfolio_images/homepage_pizzavida@1x.png"media="(max-width:767px)">
 
-<img src="img/portfolio_images/homepage_pizzavida@2x.png" alt="homepageimage">
-</picture>
-</div>
+<img src="img/portfolio_images/homepage_pizzavida@2x.png" alt="homepageimage"></picture>
+ </div>
 
-<div> <h3>Pizza Vida App</h3> </div>
-<div><p>Pizza Vida is a native mobile app that works on both iPhones and
+
+<div class="col- md-6 col-lg-5"> <h3>Pizza Vida App</h3> 
+<p>Pizza Vida is a native mobile app that works on both iPhones and
 Android phones. The app provides an intuitive and user-friendly
 interface for customers to conveniently order vegan pizza for either
 pickup or delivery from Pizza Vida. It aims to make the process
 user-friendly and issue-free.</p>
-</div>
-
 <a href="pizzavida.html" target="_self" class="button">View project</a>
+</div><!--end row-->
+</div><!--end contianer-->
 </div>
-
 
 
 <div id="work">
 <div class="container">
 
+<div class="row">
+<div class="column col-md-6 col-lg-7">
 <picture> <source srcset="img/portfolio_images/homepagebarkbuddy@1x.png"
 media="(max-width:767px)">
-
 <img src="img/portfolio_images/homepagebarkbuddy@2x.png" alt="homepage image barkbuddy"></picture>
+</div>
 
 
- <h3>barkbuddy app</h3> 
+ <div class="column col-md-6 col-lg-5"></div><h3>barkbuddy app</h3> 
  <p> barkbuddy wants to make life easier for pet owners in Toronto by helping them find all the great pet-friendly places to take their
 furry friends. With this app, pet owners can find everything they
 need to take care of their pets in one place, whether it's
 activities, businesses or venues. It's a one-stop-shop for pet owners in Toronto!</p> 
-
 <a href="pizzavida.html" target="_self" class="button">View project</a>
 
 </div>
+
+</div><!--end row-->
+</div><!--container row-->
+</div><!--end work-->
+</div><!--end hero-->
 
 <footer id="footer"   class="container">
 <div> <h2>Get in touch</h2>
@@ -105,8 +114,11 @@ activities, businesses or venues. It's a one-stop-shop for pet owners in Toronto
 <i class="fa-brands fa-instagram"></i>
 
 <p>© 2023 iMelissa. All rights reserved</p>
-</div>
-</div>
+
+</div><!--end container-->
+
+
+
 </footer>
 </body>
 </html>
