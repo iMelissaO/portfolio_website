@@ -15,7 +15,11 @@ White color: #FAFAFA
 Black color: #585959
 */
 
-* {
+
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -55,6 +59,24 @@ nav>ul>li>a:hover {
 nav>ul>li>a:active {
  color:#262626;
 }
+
+nav>ul>li>a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  }
+
 
 main {
  padding-top: 133px;
@@ -123,6 +145,12 @@ a :{
  text-decoration: none;
  /* No underlining */
 }
+
+
+
+
+
+
 
 a:hover {
  color: #cc6540;
