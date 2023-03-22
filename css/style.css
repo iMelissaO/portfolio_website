@@ -148,16 +148,21 @@ a:active{
  color:#F7F7F7;
  /* needed to override the default link color */
  font-weight: 400;
- padding: 10px;
- border-radius: 3px;
+ padding-left: 32px;
+ padding-right: 32px;
+ padding-top: 18px;
+ padding-bottom: 18px;
+ border-radius: 40px;
  border-bottom: 2px solid #262626;
  /* width of the border, type, color */
- transition: 0.2s opacity;
+transition: 0.2s opacity, 0.5s background-color, 0.4s font-size;
 
 } 
 
 .button:hover {
  opacity: 0.8;
+ cursor:pointer;
+font-size: 20px;
 } 
 
 
@@ -168,10 +173,12 @@ a:active{
  text-transform: uppercase;
  border: 2px solid #FF386B;
 
+
 }
 .button.contact:hover {
  background-color: #FF386B;
  color: #ffffff;
+
 }
 
 .button.resume{
@@ -179,6 +186,7 @@ a:active{
  color:#FF386B;
  text-transform: uppercase;
  border: 2px solid #FF386B;
+ 
 
 }
 
@@ -187,7 +195,83 @@ a:active{
 .button.resume:hover {
  background-color: #FF386B;
  color: #ffffff;
+
 }
+
+
+
+
+@keyframes color-change {
+  0% {
+    fill: #FBFFBC;
+  }
+
+  50% {
+    fill: #BCFFE2;
+  }
+
+  100% {
+    fill: #C1BCFF;
+  }
+}
+
+#cloud3 {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  
+      from {
+        transform: translate(0, 50px);
+      }
+  
+      to {
+        transform: translate(200px, 50px);
+      }
+    
+}
+
+#cloud2 {animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+#cloud1 {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+#woman {animation: 1s bounce infinite ease-out alternate;}
+
+
+
+
 
 
 /* Layout styling */
@@ -226,10 +310,18 @@ a:active{
  text-align: center;
 }
 
-#about h2,p {
+#about h2,h3,p {
  text-align: center;
  /* Centers text */
 }
+
+.relevantskills {
+  text-align: center;
+}
+
+.buttonresume {text-align: center;}
+
+.aboutpizzavida {float: left;}
 
 #app h1,h2,h3,p {text-align:center ;}
 
@@ -273,6 +365,7 @@ Medium devices (640px and larger)
 #about-page h3 {
   margin-top: 0;
 }
+
 
 .container {
   max-width: 1200px;
@@ -325,3 +418,7 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
+
+
+
+
