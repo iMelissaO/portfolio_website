@@ -112,7 +112,13 @@ img {
 
 
 
-a {
+
+
+
+
+
+
+a :{
  color: #262626;
  text-decoration: none;
  /* No underlining */
@@ -268,7 +274,6 @@ font-size: 20px;
 }
 
 #woman {animation: 1s bounce infinite ease-out alternate;}
-
 
 
 
