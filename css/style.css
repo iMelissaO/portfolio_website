@@ -330,7 +330,8 @@ font-size: 20px;
   text-align: center;
 }
 
-.buttonresume {text-align: center;}
+.buttonresume {text-align: center;
+margin: 20px;}
 
 .aboutpizzavida {float: left;}
 
