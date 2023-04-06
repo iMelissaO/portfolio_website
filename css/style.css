@@ -21,16 +21,114 @@ Black color: #585959
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F7F7F7;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #262626;
+}
+
+
+
+h1,
+h2,
+h3,
+{
+line-height: 1.4;
+}
+
+.Melissa {
+  color: #FF386B;
+}
+
+h1 {
+
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.75em;
+  font-weight: 700;
+
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+/* custom logo sizing */
+.logoimelissa {
+  width: 100px;
+  height: auto;
+}
+
+/* general image responsive sizing */
+img {
+  width: 100%;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+  /* No underlining */
+}
+
+
+a:hover {
+  color: #cc6540;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:hover,
+:focus {
+  color: #FF386B;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:visited {
+  /* visited link */
+  color: #F7F7F7;
+}
+
+a:active {
+  /* selected link */
+  color: #31A8FF;
+}
+
+
 
 header {
   background-color: #F7F7F7;
   padding: 10px 0;
   position: relative;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  top: 0;
+
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'quicksand'
 }
 
 .navtoggle.responsive li {
   display: block;
+  text-align: right;
+
 }
 
 
@@ -45,48 +143,40 @@ header {
 }
 
 .navtoggle li .icon {
-  position: relative;
+  position: absolute;
   right: 0;
   top: 2px;
   font-size: 20px;
-  padding-right: 0px;
 
 }
 
-
-
-
- nav>ul {
- list-style-type: none;
- padding: 0;
- margin: 0;
- font-family:'quicksand'
-} 
 
 
 
 nav>ul>li>a {
- padding: 0 15px;
- text-transform: uppercase;
- font-weight: 700;
- color: #4a4a4a;
- width: 100%;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
 
 }
 
-nav>ul>li>a:visited {color:#FF386B;}
+nav>ul>li>a:visited {
+  color: #FF386B;
+}
+
 nav>ul>li>a:hover {
- color:#4a4a4a
- 
+  color: #4a4a4a
 }
+
 nav>ul>li>a:active {
- color:#262626;
+  color: #262626;
 }
 
 
 
 main {
- padding-top: 56px;
+  padding-top: 56px;
 }
 
 
@@ -97,9 +187,11 @@ main {
 
 .navtoggle.responsive li {
   display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  padding: px 0;
+  border-top: 1px;
+  text-align: right;
 }
+
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
@@ -108,154 +200,74 @@ main {
 
 
 
-body {
- background-color: #F7F7F7;
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 18px;
- /* Sets the font size to 16px */
- font-weight: 300;
- /* Sets the font weight to 300 */
- line-height: 1.6;
- /* Sets the line-height to 1.6 * the font-size */
- color: #262626;
-}
-
-
-
-h1,h2,h3, {line-height: 1.4;}
-
-.Melissa {
- color: #FF386B;
-}
-h1 {
-
- font-family: 'Quicksand', sans-serif;
- font-size: 2.75em;
- font-weight: 700;
-
-}
-
-h2 {
- font-family: 'Quicksand', sans-serif;
- font-size: 2.25em;
- font-weight: 700;
-}
-
-h3 {
- font-size: 1.75em;
- font-weight: 400;
-}
-
-/* custom logo sizing */
-.logoimelissa {
- width: 100px;
- height: auto;
-}
-
-/* general image responsive sizing */
-img {
- width: 100%;
-}
 
 
 
 
 
 
-
-
-
-a :{
- color: #262626;
- text-decoration: none;
- /* No underlining */
-}
-
-
-a:hover {
- color: #cc6540;
- text-decoration: underline;
- /* Underlining when hovering over a link */
-}
-
-a:hover ,
- :focus{
- color: #FF386B;
- text-decoration: underline;
- /* Underlining when hovering over a link */
-}
-
-a:visited{
- /* visited link */
- color:#F7F7F7;
-}
-
-a:active{
- /* selected link */
- color:#31A8FF;
-}
-
-
-.button{display: inline-block;
- /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
- background-color:#262626;
- color:#F7F7F7;
- /* needed to override the default link color */
- font-weight: 400;
- padding-left: 32px;
- padding-right: 32px;
- padding-top: 18px;
- padding-bottom: 18px;
- border-radius: 45px;
- border-bottom: 2px solid;
- /* width of the border, type, color */
-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #262626;
+  color: #F7F7F7;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-radius: 45px;
+  border-bottom: 2px solid;
+  /* width of the border, type, color */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 
-} 
+}
 
 .button:hover {
   background-color: #FF386B;
-    box-shadow: 0px 15px 20px #C1BCFF(46, 229, 157, 0.4);
-    color: #fff;
-    transform: translateY(-7px);
-} 
+  box-shadow: 0px 15px 20px #C1BCFF(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
 
 
 
 .button.contact {
- background-color: transparent;
- color: #FF386B;
- text-transform: uppercase;
- border: 2px solid #FF386B;
- margin-top: 8px;
- margin-bottom: 40px;
+  background-color: transparent;
+  color: #FF386B;
+  text-transform: uppercase;
+  border: 2px solid #FF386B;
+  margin-top: 8px;
+  margin-bottom: 40px;
 
 
 
 }
+
 .button.contact:hover {
- background-color: #FF386B;
- color: #ffffff;
+  background-color: #FF386B;
+  color: #ffffff;
 
 }
 
-.button.resume{
- background-color: transparent;
- color:#FF386B;
- text-transform: uppercase;
- border: 2px solid #FF386B;
- 
+.button.resume {
+  background-color: transparent;
+  color: #FF386B;
+  text-transform: uppercase;
+  border: 2px solid #FF386B;
+
 
 }
 
 
 
 .button.resume:hover {
- background-color: #FF386B;
- color: #ffffff;
+  background-color: #FF386B;
+  color: #ffffff;
 
 }
 
@@ -285,21 +297,22 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes cloud-move {
-  
-      from {
-        transform: translate(0, 50px);
-      }
-  
-      to {
-        transform: translate(200px, 50px);
-      }
-    
+
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+
 }
 
-#cloud2 {animation-duration: 30s;
+#cloud2 {
+  animation-duration: 30s;
   animation-name: cloud-move;
   animation-iteration-count: infinite;
-  animation-direction:normal;
+  animation-direction: normal;
   animation-timing-function: linear;
 }
 
@@ -328,68 +341,101 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   }
 }
 
-#woman {animation: 1s bounce infinite ease-out alternate;}
+#woman {
+  animation: 1s bounce infinite ease-out alternate;
+}
 
 /* images size*/
 
-.myphoto {width="150" height="100"}
+.myphoto {
+  width="150" height="100"
+}
 
 
 /* Layout styling */
 
-#hero h1,p {
- text-align: center;
- /* Centers text */
+#hero h1,
+p {
+  text-align: center;
+  /* Centers text */
 }
 
 #hero {
- background-color: #F7F7F7;
- padding: 20px 0;
- display: block;
- width: 100%;
+  background-color: #F7F7F7;
+  padding: 20px 0;
+  display: block;
+  width: 100%;
 }
 
 .container {
- padding: 0 15px;
+  padding: 0 15px;
 }
+
 .row {
- margin: 25px 0;
- /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
- padding-bottom: 25px;
- border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 
 }
-#work h3,p {text-align: left;}
-#work {background-color: #FDFDFD;}
 
-#work p {text-align: left;}
+#work h3,
+p {
+  text-align: left;
+}
 
-#footer {text-align: center;}
+#work {
+  background-color: #FDFDFD;
+}
+
+#work p {
+  text-align: left;
+}
+
+#footer {
+  text-align: center;
+}
+
 #footer p {
- text-align: center;
+  text-align: center;
 }
 
-.fa-brands {color: #FF386B;
-} 
+.fa-brands {
+  color: #FF386B;
+}
 
-#about h2,h3,p {
- text-align: center;
- /* Centers text */
+#about h2,
+h3,
+p {
+  text-align: center;
+  /* Centers text */
 }
 
 .relevantskills {
   text-align: center;
 }
-.relevantskills li{list-style: none;}
 
-.buttonresume {text-align: center;}
+.relevantskills li {
+  list-style: none;
+}
 
-.aboutpizzavida {float: left;}
+.buttonresume {
+  text-align: center;
+}
 
-#app h1,h2,h3,p {text-align:center ;}
+.aboutpizzavida {
+  float: left;
+}
+
+#app h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
 
 
 
@@ -397,73 +443,74 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) 
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
-{ header {
-  text-align: unset;
-  padding: 20px 0 13px;
- }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
- nav>ul>li {
-   display: inline-block;
- }
-
- .navtoggle li:not(:last-child) {
-   display: inline-block;
- }
-
- .navtoggle li:last-child {
-   display: none;
- }
+  nav>ul {
+    display: inline-block;
+  }
 
 
+  nav>ul>li {
+    display: inline-block;
+  }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-
- }
-
- nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
- }
-
- .col-md-6 {
-   width: 50%;
- }
-
- 
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-
-#about-page h3 {
-  margin-top: 0;
-}
-
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
 
 
 
-/* ==============================
+  .col-md-6 {
+    width: 50%;
+  }
+
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+  @media only screen and (min-width: 1024px) {
 
 
     header {
@@ -477,16 +524,19 @@ Large devices (1024px or larger)
       margin-top: 4px;
     }
 
+
+
+
     .col-md-7 {
       width: 50%;
     }
 
 
-        .container {
-          max-width: 1200px;
-          margin-left: auto;
-          margin-right: auto;
-        }
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
 
 
@@ -498,11 +548,10 @@ Large devices (1024px or larger)
 
 
 
-/* ==============================
+      /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
-
+      @media only screen and (min-width: 1440px) {}
 
 
 
