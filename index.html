@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+    </style>
 
-  <style> @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
-  </style>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/scripts.js"></script>
 
+    <script
+      src="https://kit.fontawesome.com/477cbefee9.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Melissa" content="Melissa O'Conor" />
+    <meta
+      name="description"
+      content="Short description including keywords related to the pages content for SEO purposes"
+    />
+    <title>Melissa O'Conor Portfolio</title>
+  </head>
 
+  <body>
+    <!-- For the header -->
+    <header>
+      <!-- For the navigation -->
 
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img
+            class="logoimelissa"
+            src="img/portfolio_images/imelissa._logo.svg"
+            alt="logo_for_iMelissa portfolio"
+          />
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html" target="_self">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-<script src="js/jquery-3.6.4.min.js"></script>
-<script src="js/scripts.js"></script>
+    <div id="hero">
+      <div class="container">
+        <h1>Hi, I’m <span class="Melissa">Melissa.</span></h1>
 
+        <p>
+          I’m a UI/UX designer based in Toronto. Turning your UI/UX dreams into
+          reality with a unique blend of creativity and technical knowledge
+        </p>
+      </div>
+      <!--end container-->
 
-
-<script src="https://kit.fontawesome.com/477cbefee9.js" crossorigin="anonymous" ></script>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-<meta name="Melissa" content="Melissa O'Conor" >
-<meta name="description" content="Short description including keywords related to the pages content for SEO purposes">
-<title>Melissa O'Conor Portfolio</title>
-</head>
-
-
-
-<body>
-<!-- For the header -->
- <header>
-<!-- For the navigation -->
-
-<div class="container">
-  <div class="navtoggle" id="myNavtoggle"> 
-<img class="logoimelissa" src="img/portfolio_images/imelissa._logo.svg" alt="logo_for_iMelissa portfolio">
-<nav> 
-<ul class="navigation">
-<li><a href="index.html">Work</a></li>
-<li><a href="about.html" target="_self">About</a></li>
-<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-
-</ul>
-</nav>
-
-</div>
-</div> 
-</header>
-
-
-<div id="hero">
-<div class="container">
-<h1>Hi, I’m <span class="Melissa">Melissa.</span></h1>
-
-
-
-
-<p>I’m a UI/UX designer based in Toronto. 
-  Turning your UI/UX dreams into
-reality with a unique blend of creativity and technical knowledge</p>
-</div><!--end container-->
-
-
-
-
-<div id="work">
+      <div id="work">
         <div class="container">
           <h2>My work</h2>
           <div class="row">
             <div class="column col-md-6 col-lg-7">
-              <picture><source
+              <picture
+                ><source
                   srcset="img/portfolio_images/homepage_pizzavida@1x.png"
                   media="(max-width:767px)"
                 />
@@ -105,107 +111,187 @@ reality with a unique blend of creativity and technical knowledge</p>
         </div>
         <!--end contianer-->
 
+        <div class="container">
+          <div class="row">
+            <div class="column col-md-6 col-lg-7">
+              <picture>
+                <source
+                  srcset="img/portfolio_images/homepagebarkbuddy@1x.png"
+                  media="(max-width:767px)" />
+                <img
+                  src="img/portfolio_images/homepagebarkbuddy@2x.png"
+                  alt="homepage image barkbuddy"
+              /></picture>
+            </div>
 
+            <div class="column col-md-6 col-lg-5">
+              <h3>barkbuddy app</h3>
+              <p>
+                barkbuddy wants to make life easier for pet owners in Toronto by
+                helping them find all the great pet-friendly places to take
+                their furry friends. With this app, pet owners can find
+                everything they need to take care of their pets in one place,
+                whether it's activities, businesses or venues. It's a
+                one-stop-shop for pet owners in Toronto!
+              </p>
+              <a href="pizzavida.html" target="_self" class="button"
+                >View project</a
+              >
+            </div>
+            <!--end column-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--container row-->
 
-<div class="container">
-<div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="column col-md-6 col-lg-7">
+              <svg
+                viewBox="0 0 1031 697"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="fly">
+                  <path
+                    id="cloud2"
+                    d="M746.975 162.467C747.787 146.953 754.522 132.342 765.79 121.647C777.058 110.953 792.001 104.991 807.536 104.991C809.38 104.991 811.2 105.087 813.001 105.248C820.085 93.06 830.243 82.9441 842.461 75.9105C854.678 68.8769 868.527 65.1717 882.624 65.165C896.721 65.1584 910.573 68.8505 922.797 75.8725C935.021 82.8946 945.189 93.0009 952.285 105.182C953.804 105.068 955.334 104.991 956.883 104.991C972.418 104.991 987.361 110.953 998.629 121.647C1009.9 132.342 1016.63 146.953 1017.44 162.467"
+                    fill="#C6C7DA"
+                  />
+                  <path
+                    id="cloud3"
+                    d="M71.0254 504.227C76.4799 398.248 164.134 313.995 271.47 313.995C277.57 313.995 283.594 314.313 289.556 314.846C313.004 274.507 346.625 241.025 387.061 217.745C427.498 194.466 473.334 182.202 519.993 182.18C566.652 182.158 612.5 194.378 652.958 217.62C693.417 240.861 727.07 274.311 750.555 314.628C755.585 314.25 760.648 313.995 765.775 313.995C873.111 313.995 960.765 398.248 966.219 504.227"
+                    fill="#FAF2EF"
+                  />
+                  <path
+                    id="cloud1"
+                    d="M0 138.467C1.09858 117.475 10.2109 97.7059 25.4577 83.2359C40.7044 68.766 60.9228 60.6989 81.9428 60.6985C84.4367 60.6985 86.8993 60.8286 89.3365 61.0464C98.9221 44.5555 112.667 30.8681 129.197 21.3512C145.728 11.8343 164.466 6.82104 183.54 6.81202C202.615 6.80301 221.358 11.7986 237.897 21.2998C254.437 30.8011 268.194 44.4755 277.796 60.9573C279.852 60.8029 281.922 60.6985 284.017 60.6985C305.037 60.6989 325.256 68.766 340.502 83.2359C355.749 97.7059 364.861 117.475 365.96 138.467"
+                    fill="#E3E0EC"
+                  />
+                  <g id="woman">
+                    <path
+                      id="Vector"
+                      d="M503.734 230.448C503.734 230.448 517.734 264.448 496.734 272.448C496.734 272.448 526.734 285.448 533.734 282.448C540.734 279.448 545.734 272.448 545.734 270.448C545.734 268.448 538.734 267.448 538.734 267.448C538.734 267.448 525.734 268.448 535.734 235.448L503.734 230.448Z"
+                      fill="#FBBEBE"
+                    />
+                    <path
+                      id="Vector_2"
+                      d="M519.734 248.448C533.541 248.448 544.734 237.255 544.734 223.448C544.734 209.641 533.541 198.448 519.734 198.448C505.927 198.448 494.734 209.641 494.734 223.448C494.734 237.255 505.927 248.448 519.734 248.448Z"
+                      fill="#FBBEBE"
+                    />
+                    <path
+                      id="Vector_3"
+                      d="M503.234 248.948C515.384 248.948 525.234 235.069 525.234 217.948C525.234 200.827 515.384 186.948 503.234 186.948C491.084 186.948 481.234 200.827 481.234 217.948C481.234 235.069 491.084 248.948 503.234 248.948Z"
+                      fill="#FF6584"
+                    />
+                    <path
+                      id="Vector_4"
+                      d="M487.234 238.948C499.384 238.948 509.234 225.069 509.234 207.948C509.234 190.827 499.384 176.948 487.234 176.948C475.084 176.948 465.234 190.827 465.234 207.948C465.234 225.069 475.084 238.948 487.234 238.948Z"
+                      fill="#FF6584"
+                    />
+                    <path
+                      id="Vector_5"
+                      d="M465.234 200.948C471.309 200.948 476.234 194.009 476.234 185.448C476.234 176.888 471.309 169.948 465.234 169.948C459.159 169.948 454.234 176.888 454.234 185.448C454.234 194.009 459.159 200.948 465.234 200.948Z"
+                      fill="#FF6584"
+                    />
+                    <path
+                      id="Vector_6"
+                      d="M544.734 266.449C544.734 266.449 550.734 254.449 572.734 248.449C594.734 242.449 637.734 170.449 637.734 170.449C637.734 170.449 635.734 127.449 645.734 140.449C655.734 153.449 647.734 179.449 647.734 179.449L621.93 224.019C617.115 232.338 611.092 239.896 604.058 246.446C588.104 261.295 559.599 287.449 556.734 287.449C552.734 287.449 544.734 266.449 544.734 266.449Z"
+                      fill="#FBBEBE"
+                    />
+                    <path
+                      id="Vector_7"
+                      opacity="0.1"
+                      d="M509.734 437.448C509.734 437.448 516.734 522.448 514.734 530.448C512.734 538.448 506.734 554.448 516.734 601.448C526.734 648.448 514.734 645.448 514.734 645.448L546.734 659.448C546.734 659.448 535.734 605.448 537.734 590.448C539.734 575.448 538.734 544.448 544.734 523.448C550.734 502.448 551.734 443.448 551.734 443.448L509.734 437.448Z"
+                      fill="black"
+                    />
+                    <path
+                      id="Vector_8"
+                      d="M545.489 648.629C543.01 650.352 536.641 652.099 524.734 639.448C524.734 639.448 517.734 629.448 511.734 639.448C505.734 649.448 509.734 650.448 513.734 655.448C517.595 660.275 548.481 693.058 561.412 691.727C561.862 691.683 562.305 691.589 562.734 691.448C574.734 687.448 557.734 674.448 557.734 674.448C557.734 674.448 546.589 657.302 546.525 649.205C546.528 649.082 546.498 648.962 546.438 648.855C546.377 648.749 546.289 648.662 546.182 648.602C546.075 648.543 545.954 648.514 545.832 648.519C545.709 648.524 545.591 648.562 545.489 648.629Z"
+                      fill="#3F3D56"
+                    />
+                    <path
+                      id="Vector_9"
+                      d="M485.734 427.448C485.734 427.448 468.734 466.448 461.734 486.448C458.059 496.948 446.942 500.282 437.21 501.08C425.177 502.017 413.488 505.539 402.941 511.407C388.945 519.263 369.846 528.179 357.734 526.448C336.734 523.448 353.734 556.448 353.734 556.448C353.734 556.448 384.734 537.448 413.734 535.448C442.734 533.448 473.734 530.448 487.734 512.448C501.734 494.448 535.734 437.448 535.734 437.448L485.734 427.448Z"
+                      fill="#FBBEBE"
+                    />
+                    <path
+                      id="Vector_10"
+                      d="M354.734 551.448C354.734 551.448 344.734 544.448 352.734 537.448C360.734 530.448 363.734 524.448 363.734 524.448C363.734 524.448 349.734 509.448 344.734 517.448C339.734 525.448 317.734 561.448 322.734 572.448C327.734 583.448 332.734 586.448 338.734 574.448C344.734 562.448 359.866 553.001 359.866 553.001L354.734 551.448Z"
+                      fill="#3F3D56"
+                    />
+                    <path
+                      id="Vector_11"
+                      d="M540.734 271.449C540.734 271.449 537.41 278.097 506.517 271.696C502.445 270.798 498.19 271.267 494.411 273.03C490.631 274.793 487.538 277.751 485.609 281.449C481.734 289.199 481.234 300.449 494.734 314.449C494.734 314.449 518.734 341.449 506.734 352.449C494.734 363.449 563.734 345.449 563.734 345.449C563.734 345.449 554.734 339.449 562.734 321.449C569.02 307.306 568.515 299.336 563.644 293.175C560.704 289.342 558.704 284.873 557.805 280.127C556.44 273.432 553.067 265.044 544.734 264.449C544.734 264.449 535.975 263.936 535.354 266.192C534.734 268.449 542.734 270.449 540.734 271.449Z"
+                      fill="#FFBCD9"
+                    />
+                    <path
+                      id="Vector_12"
+                      d="M504.172 292.662C503.966 291.252 503.713 289.851 503.536 288.436C502.932 283.608 500.636 271.911 492.695 273.923C482.734 276.448 471.734 301.448 471.734 301.448C471.734 301.448 462.734 329.448 449.734 336.448C436.734 343.448 400.734 379.448 400.734 379.448C400.734 379.448 370.734 387.448 381.734 395.448C392.734 403.448 406.734 390.448 406.734 390.448L442.103 369.227C454.473 361.786 465.11 351.785 473.299 339.896C480.667 329.225 489.894 316.892 495.741 312.816C499.282 310.449 501.939 306.975 503.298 302.937C504.366 299.623 504.665 296.109 504.172 292.662Z"
+                      fill="#FBBEBE"
+                    />
+                    <path
+                      id="Vector_13"
+                      d="M512.734 350.448C512.734 350.448 466.734 344.448 440.734 375.448C414.734 406.448 395.734 397.448 397.734 402.448C399.734 407.448 495.734 466.449 551.734 459.449C585.827 455.187 603.982 451.296 612.969 448.904C616.827 447.912 620.229 445.63 622.61 442.437C623.944 440.67 625.597 439.169 627.484 438.011C628.453 437.374 629.285 436.549 629.929 435.585C630.573 434.621 631.017 433.537 631.234 432.398C631.451 431.259 631.437 430.088 631.193 428.954C630.949 427.82 630.479 426.747 629.812 425.799C613.952 402.853 570.896 342.07 558.734 340.448C543.734 338.448 512.734 350.448 512.734 350.448Z"
+                      fill="#FFBCD9"
+                    />
+                    <path
+                      id="Vector_14"
+                      d="M520.234 207.948C529.071 207.948 536.234 202.8 536.234 196.448C536.234 190.097 529.071 184.948 520.234 184.948C511.398 184.948 504.234 190.097 504.234 196.448C504.234 202.8 511.398 207.948 520.234 207.948Z"
+                      fill="#FF6584"
+                    />
+                    <path
+                      id="Vector_15"
+                      d="M509.734 437.448C509.734 437.448 516.734 522.448 514.734 530.448C512.734 538.448 506.734 554.448 516.734 601.448C526.734 648.448 514.734 645.448 514.734 645.448L546.734 659.448C546.734 659.448 535.734 605.448 537.734 590.448C539.734 575.448 538.734 544.448 544.734 523.448C550.734 502.448 551.734 443.448 551.734 443.448L509.734 437.448Z"
+                      fill="#FBBEBE"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
 
-<div class="column col-md-6 col-lg-7">
-<picture> <source srcset="img/portfolio_images/homepagebarkbuddy@1x.png"
-media="(max-width:767px)">
-<img src="img/portfolio_images/homepagebarkbuddy@2x.png" alt="homepage image barkbuddy"></picture>
-</div>
+            <div class="column col-md-6 col-lg-5">
+              <h3>CSS animation</h3>
+              <p>Quick exercise with CSS keyframes to animate an SVG image</p>
+              <a href="pizzavida.html" target="_self" class="button"
+                >Coming soon</a
+              >
+            </div>
+            <!--end column-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--container row-->
+      </div>
+      <!--end work-->
+    </div>
+    <!--end hero-->
 
+    <footer id="footer" class="container">
+      <div>
+        <h2>Get in touch</h2>
+        <p>Want to get in touch? Send me an email</p>
+      </div>
 
- <div class="column col-md-6 col-lg-5">
- <h3>barkbuddy app</h3> 
- <p> barkbuddy wants to make life easier for pet owners in Toronto by helping them find all the great pet-friendly places to take their
-furry friends. With this app, pet owners can find everything they
-need to take care of their pets in one place, whether it's
-activities, businesses or venues. It's a one-stop-shop for pet owners in Toronto!</p> 
-<a href="pizzavida.html" target="_self" class="button">View project</a>
+      <div>
+        <a href="mailto:imelissaoconor@gmail.com" class="button contact"
+          >Send email</a
+        >
+      </div>
 
-</div><!--end column-->
-</div><!--end row-->
-</div><!--container row-->
+      <!--Social Media Layout and Placeholders-->
 
+      <a href="https://www.linkedin.com/in/melissa-o-conor-5489ba260/">
+        <i class="fa-brands fa-linkedin fa-2x"></i
+      ></a>
 
+      <a href="https://www.behance.net/imelissaoconor"
+        ><i class="fa-brands fa-behance fa-2x"></i
+      ></a>
 
+      <p>© 2023 iMelissa. All rights reserved</p>
+    </footer>
 
-<div class="container">
-<div class="row">
-
-<div class="column col-md-6 col-lg-7">
-<picture> <svg viewBox="0 0 1031 697" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="fly">
-<path id="cloud2" d="M746.975 162.467C747.787 146.953 754.522 132.342 765.79 121.647C777.058 110.953 792.001 104.991 807.536 104.991C809.38 104.991 811.2 105.087 813.001 105.248C820.085 93.06 830.243 82.9441 842.461 75.9105C854.678 68.8769 868.527 65.1717 882.624 65.165C896.721 65.1584 910.573 68.8505 922.797 75.8725C935.021 82.8946 945.189 93.0009 952.285 105.182C953.804 105.068 955.334 104.991 956.883 104.991C972.418 104.991 987.361 110.953 998.629 121.647C1009.9 132.342 1016.63 146.953 1017.44 162.467" fill="#C6C7DA"/>
-<path id="cloud3" d="M71.0254 504.227C76.4799 398.248 164.134 313.995 271.47 313.995C277.57 313.995 283.594 314.313 289.556 314.846C313.004 274.507 346.625 241.025 387.061 217.745C427.498 194.466 473.334 182.202 519.993 182.18C566.652 182.158 612.5 194.378 652.958 217.62C693.417 240.861 727.07 274.311 750.555 314.628C755.585 314.25 760.648 313.995 765.775 313.995C873.111 313.995 960.765 398.248 966.219 504.227" fill="#FAF2EF"/>
-<path id="cloud1" d="M0 138.467C1.09858 117.475 10.2109 97.7059 25.4577 83.2359C40.7044 68.766 60.9228 60.6989 81.9428 60.6985C84.4367 60.6985 86.8993 60.8286 89.3365 61.0464C98.9221 44.5555 112.667 30.8681 129.197 21.3512C145.728 11.8343 164.466 6.82104 183.54 6.81202C202.615 6.80301 221.358 11.7986 237.897 21.2998C254.437 30.8011 268.194 44.4755 277.796 60.9573C279.852 60.8029 281.922 60.6985 284.017 60.6985C305.037 60.6989 325.256 68.766 340.502 83.2359C355.749 97.7059 364.861 117.475 365.96 138.467" fill="#E3E0EC"/>
-<g id="woman">
-<path id="Vector" d="M503.734 230.448C503.734 230.448 517.734 264.448 496.734 272.448C496.734 272.448 526.734 285.448 533.734 282.448C540.734 279.448 545.734 272.448 545.734 270.448C545.734 268.448 538.734 267.448 538.734 267.448C538.734 267.448 525.734 268.448 535.734 235.448L503.734 230.448Z" fill="#FBBEBE"/>
-<path id="Vector_2" d="M519.734 248.448C533.541 248.448 544.734 237.255 544.734 223.448C544.734 209.641 533.541 198.448 519.734 198.448C505.927 198.448 494.734 209.641 494.734 223.448C494.734 237.255 505.927 248.448 519.734 248.448Z" fill="#FBBEBE"/>
-<path id="Vector_3" d="M503.234 248.948C515.384 248.948 525.234 235.069 525.234 217.948C525.234 200.827 515.384 186.948 503.234 186.948C491.084 186.948 481.234 200.827 481.234 217.948C481.234 235.069 491.084 248.948 503.234 248.948Z" fill="#FF6584"/>
-<path id="Vector_4" d="M487.234 238.948C499.384 238.948 509.234 225.069 509.234 207.948C509.234 190.827 499.384 176.948 487.234 176.948C475.084 176.948 465.234 190.827 465.234 207.948C465.234 225.069 475.084 238.948 487.234 238.948Z" fill="#FF6584"/>
-<path id="Vector_5" d="M465.234 200.948C471.309 200.948 476.234 194.009 476.234 185.448C476.234 176.888 471.309 169.948 465.234 169.948C459.159 169.948 454.234 176.888 454.234 185.448C454.234 194.009 459.159 200.948 465.234 200.948Z" fill="#FF6584"/>
-<path id="Vector_6" d="M544.734 266.449C544.734 266.449 550.734 254.449 572.734 248.449C594.734 242.449 637.734 170.449 637.734 170.449C637.734 170.449 635.734 127.449 645.734 140.449C655.734 153.449 647.734 179.449 647.734 179.449L621.93 224.019C617.115 232.338 611.092 239.896 604.058 246.446C588.104 261.295 559.599 287.449 556.734 287.449C552.734 287.449 544.734 266.449 544.734 266.449Z" fill="#FBBEBE"/>
-<path id="Vector_7" opacity="0.1" d="M509.734 437.448C509.734 437.448 516.734 522.448 514.734 530.448C512.734 538.448 506.734 554.448 516.734 601.448C526.734 648.448 514.734 645.448 514.734 645.448L546.734 659.448C546.734 659.448 535.734 605.448 537.734 590.448C539.734 575.448 538.734 544.448 544.734 523.448C550.734 502.448 551.734 443.448 551.734 443.448L509.734 437.448Z" fill="black"/>
-<path id="Vector_8" d="M545.489 648.629C543.01 650.352 536.641 652.099 524.734 639.448C524.734 639.448 517.734 629.448 511.734 639.448C505.734 649.448 509.734 650.448 513.734 655.448C517.595 660.275 548.481 693.058 561.412 691.727C561.862 691.683 562.305 691.589 562.734 691.448C574.734 687.448 557.734 674.448 557.734 674.448C557.734 674.448 546.589 657.302 546.525 649.205C546.528 649.082 546.498 648.962 546.438 648.855C546.377 648.749 546.289 648.662 546.182 648.602C546.075 648.543 545.954 648.514 545.832 648.519C545.709 648.524 545.591 648.562 545.489 648.629Z" fill="#3F3D56"/>
-<path id="Vector_9" d="M485.734 427.448C485.734 427.448 468.734 466.448 461.734 486.448C458.059 496.948 446.942 500.282 437.21 501.08C425.177 502.017 413.488 505.539 402.941 511.407C388.945 519.263 369.846 528.179 357.734 526.448C336.734 523.448 353.734 556.448 353.734 556.448C353.734 556.448 384.734 537.448 413.734 535.448C442.734 533.448 473.734 530.448 487.734 512.448C501.734 494.448 535.734 437.448 535.734 437.448L485.734 427.448Z" fill="#FBBEBE"/>
-<path id="Vector_10" d="M354.734 551.448C354.734 551.448 344.734 544.448 352.734 537.448C360.734 530.448 363.734 524.448 363.734 524.448C363.734 524.448 349.734 509.448 344.734 517.448C339.734 525.448 317.734 561.448 322.734 572.448C327.734 583.448 332.734 586.448 338.734 574.448C344.734 562.448 359.866 553.001 359.866 553.001L354.734 551.448Z" fill="#3F3D56"/>
-<path id="Vector_11" d="M540.734 271.449C540.734 271.449 537.41 278.097 506.517 271.696C502.445 270.798 498.19 271.267 494.411 273.03C490.631 274.793 487.538 277.751 485.609 281.449C481.734 289.199 481.234 300.449 494.734 314.449C494.734 314.449 518.734 341.449 506.734 352.449C494.734 363.449 563.734 345.449 563.734 345.449C563.734 345.449 554.734 339.449 562.734 321.449C569.02 307.306 568.515 299.336 563.644 293.175C560.704 289.342 558.704 284.873 557.805 280.127C556.44 273.432 553.067 265.044 544.734 264.449C544.734 264.449 535.975 263.936 535.354 266.192C534.734 268.449 542.734 270.449 540.734 271.449Z" fill="#FFBCD9"/>
-<path id="Vector_12" d="M504.172 292.662C503.966 291.252 503.713 289.851 503.536 288.436C502.932 283.608 500.636 271.911 492.695 273.923C482.734 276.448 471.734 301.448 471.734 301.448C471.734 301.448 462.734 329.448 449.734 336.448C436.734 343.448 400.734 379.448 400.734 379.448C400.734 379.448 370.734 387.448 381.734 395.448C392.734 403.448 406.734 390.448 406.734 390.448L442.103 369.227C454.473 361.786 465.11 351.785 473.299 339.896C480.667 329.225 489.894 316.892 495.741 312.816C499.282 310.449 501.939 306.975 503.298 302.937C504.366 299.623 504.665 296.109 504.172 292.662Z" fill="#FBBEBE"/>
-<path id="Vector_13" d="M512.734 350.448C512.734 350.448 466.734 344.448 440.734 375.448C414.734 406.448 395.734 397.448 397.734 402.448C399.734 407.448 495.734 466.449 551.734 459.449C585.827 455.187 603.982 451.296 612.969 448.904C616.827 447.912 620.229 445.63 622.61 442.437C623.944 440.67 625.597 439.169 627.484 438.011C628.453 437.374 629.285 436.549 629.929 435.585C630.573 434.621 631.017 433.537 631.234 432.398C631.451 431.259 631.437 430.088 631.193 428.954C630.949 427.82 630.479 426.747 629.812 425.799C613.952 402.853 570.896 342.07 558.734 340.448C543.734 338.448 512.734 350.448 512.734 350.448Z" fill="#FFBCD9"/>
-<path id="Vector_14" d="M520.234 207.948C529.071 207.948 536.234 202.8 536.234 196.448C536.234 190.097 529.071 184.948 520.234 184.948C511.398 184.948 504.234 190.097 504.234 196.448C504.234 202.8 511.398 207.948 520.234 207.948Z" fill="#FF6584"/>
-<path id="Vector_15" d="M509.734 437.448C509.734 437.448 516.734 522.448 514.734 530.448C512.734 538.448 506.734 554.448 516.734 601.448C526.734 648.448 514.734 645.448 514.734 645.448L546.734 659.448C546.734 659.448 535.734 605.448 537.734 590.448C539.734 575.448 538.734 544.448 544.734 523.448C550.734 502.448 551.734 443.448 551.734 443.448L509.734 437.448Z" fill="#FBBEBE"/>
-</g>
-</g>
-</svg>
-
-
-</picture>
-</div>
-
-
- <div class="column col-md-6 col-lg-5">
- <h3>CSS animation</h3> 
- <p> Quick exercise with CSS keyframes to animate an SVG image</p> 
-<a href="pizzavida.html" target="_self" class="button">Coming soon</a>
-
-</div><!--end column-->
-</div><!--end row-->
-</div><!--container row-->
-</div><!--end work-->
-</div><!--end hero-->
-
-
-
-
-
-
-
-
-
-<footer id="footer"   class="container">
-<div> <h2>Get in touch</h2>
-<p>Want to get in touch? Send me an email</p> </div>
-
-<div> <a href="mailto:imelissaoconor@gmail.com" class="button contact">Send email</a></div>
-
- <!--Social Media Layout and Placeholders-->
-
-<a href="https://www.linkedin.com/in/melissa-o-conor-5489ba260/"> <i class="fa-brands fa-linkedin fa-2x"></i></a>
-
-<a href="https://www.behance.net/imelissaoconor"><i class="fa-brands fa-behance fa-2x"></i></a>
-
-
-<p>© 2023 iMelissa. All rights reserved</p>
-
-</div><!--end container-->
-
-
-
-</footer>
-
-<script src="js/scripts.js"></script>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

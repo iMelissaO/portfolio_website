@@ -1,129 +1,163 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-      />
-      <link rel="stylesheet" type="text/css" href="css/style.css" />
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
     </style>
 
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/scripts.js"></script>
 
-<script src="js/jquery-3.6.4.min.js"></script>
-<script src="js/scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/477cbefee9.js"
+      crossorigin="anonymous"
+    ></script>
 
-
-
-<script
-    src="https://kit.fontawesome.com/477cbefee9.js"
-    crossorigin="anonymous"
-  ></script>
-  
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="author" content="YourName">
-<meta name="description" content="Short description including keywords related to the pages content for SEO purposes">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Melissa" content="Melissa O'Conor" />
+    <meta name="description" content="about page" />
     <title>About iMelissa.</title>
   </head>
 
   <body id="about-page">
     <!-- For the header -->
-   <header>
-<!-- For the navigation -->
+    <header>
+      <!-- For the navigation -->
 
-<div class="container">
-  <div class="navtoggle" id="myNavtoggle"> 
-<img class="logoimelissa" src="img/portfolio_images/imelissa._logo.svg" alt="logo_for_iMelissa portfolio">
-<nav> 
-<ul class="navigation">
-<li><a href="index.html">Work</a></li>
-<li><a href="about.html" target="_self">About</a></li>
-<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-
-</ul>
-</nav>
-
-</div>
-</div> 
-</header>
-
-
-
-      <div id="about" class="container"><h2>About</h2>
-      
-      
-        <picture class="myphoto"> 
-<source srcset="img/portfolio_images/portfolio_profile_photo@1x.png" media="(max-width:767px)">
-<img src="img/portfolio_images/portfolio_profile_photo@2x.png" alt="Melissa's photo"></picture> 
-      
-      <h2>My Story</h2>
-      <p>My name is Melissa, and I'm a UI/UX designer who calls Canada her home. However, I spent my formative years in Costa Rica, where I also attended culinary school before relocating to Toronto.
-The pandemic played a pivotal role in my discovery of UI/UX design, and it wasn't long before I fell in love with infusing existing systems with visually striking and user-friendly designs. I'm a naturally creative person, and my culinary background has allowed me to hone my problem-solving skills while expressing my creativity through cooking.
-UI/UX design is an ideal profession for me, as it allows me to combine my passion for creativity and problem-solving with a constantly evolving industry. I'm constantly learning and adapting to the latest trends, while keeping the user experience as my primary focus. Ultimately, my goal is to create designs that not only look fantastic but also provide users with an intuitive and enjoyable experience.
-So, if you're looking to collaborate with a passionate and dedicated UI/UX designer who's always ready to create something amazing, then look no further than me, <picture><img class="logoimelissa" src="img/portfolio_images/imelissa._logo.svg" alt="iMelissalogo"></picture>
-</p>
-
-
-<div class="buttonresume">
-<a href="file/resumeimelissa.pdf" target="_blank" class="button resume">Download resume</a> 
-</div>
-
-
-<h2>Skills and Tools </h2>
-
-<div class="row">
-
- <div class="col-md-6">
-<div class="relevantskills"><h3> Relevant Skills</h3>
-<ul>
-  <li>User research</li>
-  <li>User personas</li>
-  <li>User flows</li>
-  <li>User testing</li>
-  <li>Wireframes</li>
-  <li>UI design</li>
-  <li>Prototyping</li>
-  <li>FED</li>
-
-</ul>
-</div>
-</div> <!--end column-->
-<div class="col-md-6"> 
- <div class="relevantskills"> <h3>Tools I Use</h3>
-<ul>
- 
-  <li>Figma</li>
-  <li>Ligthroom</li>
-  
-</ul>
-</div> <!--end col-->
-</div> <!--end row-->
-</div><!--end about and container-->
-<footer id="footer" class="container">
-    <div>
-      <h2>Get in touch</h2>
-      <p>Want to get in touch? Send me an email</p>
-      <div><a href="mailto:imelissaoconor@gmail.com"class="button contact">Send email</a></div>
-      <div>
-        <!--Social Media Layout and Placeholders-->
-
-        <a href="https://www.linkedin.com/in/melissa-o-conor-5489ba260/"> <i class="fa-brands fa-linkedin fa-2x"></i></a>
-
-<a href="https://www.behance.net/imelissaoconor"><i class="fa-brands fa-behance fa-2x"></i></a>
-
-        <p>© 2023 iMelissa. All rights reserved</p>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img
+            class="logoimelissa"
+            src="img/portfolio_images/imelissa._logo.svg"
+            alt="logo_for_iMelissa portfolio"
+          />
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html" target="_self">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
+    </header>
+
+    <div id="about" class="container">
+      <h2>About</h2>
+
+      <picture class="myphoto">
+        <source
+          srcset="img/portfolio_images/portfolio_profile_photo@1x.png"
+          media="(max-width:767px)" />
+        <img
+          src="img/portfolio_images/portfolio_profile_photo@2x.png"
+          alt="Melissa's photo"
+      /></picture>
+
+      <h2>My Story</h2>
+      <p>
+        My name is Melissa, and I'm a UI/UX designer who calls Canada her home.
+        However, I spent my formative years in Costa Rica, where I also attended
+        culinary school before relocating to Toronto. The pandemic played a
+        pivotal role in my discovery of UI/UX design, and it wasn't long before
+        I fell in love with infusing existing systems with visually striking and
+        user-friendly designs. I'm a naturally creative person, and my culinary
+        background has allowed me to hone my problem-solving skills while
+        expressing my creativity through cooking. UI/UX design is an ideal
+        profession for me, as it allows me to combine my passion for creativity
+        and problem-solving with a constantly evolving industry. I'm constantly
+        learning and adapting to the latest trends, while keeping the user
+        experience as my primary focus. Ultimately, my goal is to create designs
+        that not only look fantastic but also provide users with an intuitive
+        and enjoyable experience. So, if you're looking to collaborate with a
+        passionate and dedicated UI/UX designer who's always ready to create
+        something amazing, then look no further than me,
+        <picture
+          ><img
+            class="logoimelissa"
+            src="img/portfolio_images/imelissa._logo.svg"
+            alt="iMelissalogo"
+        /></picture>
+      </p>
+
+      <div class="buttonresume">
+        <a href="file/resumeimelissa.pdf" target="_blank" class="button resume"
+          >Download resume</a
+        >
+      </div>
+
+      <h2>Skills and Tools</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="relevantskills">
+            <h3>Relevant Skills</h3>
+            <ul>
+              <li>User research</li>
+              <li>User personas</li>
+              <li>User flows</li>
+              <li>User testing</li>
+              <li>Wireframes</li>
+              <li>UI design</li>
+              <li>Prototyping</li>
+              <li>FED</li>
+            </ul>
+          </div>
+        </div>
+        <!--end column-->
+        <div class="col-md-6">
+          <div class="relevantskills">
+            <h3>Tools I Use</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Ligthroom</li>
+            </ul>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end about and container-->
+      <footer id="footer" class="container">
+        <div>
+          <h2>Get in touch</h2>
+          <p>Want to get in touch? Send me an email</p>
+          <div>
+            <a href="mailto:imelissaoconor@gmail.com" class="button contact"
+              >Send email</a
+            >
+          </div>
+          <div>
+            <!--Social Media Layout and Placeholders-->
+
+            <a href="https://www.linkedin.com/in/melissa-o-conor-5489ba260/">
+              <i class="fa-brands fa-linkedin fa-2x"></i
+            ></a>
+
+            <a href="https://www.behance.net/imelissaoconor"
+              ><i class="fa-brands fa-behance fa-2x"></i
+            ></a>
+
+            <p>© 2023 iMelissa. All rights reserved</p>
+          </div>
+        </div>
+      </footer>
     </div>
-  </footer>
-    
   </body>
-
-
 </html>
